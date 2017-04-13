@@ -1,0 +1,19 @@
+{
+  "name": "precz.guide.edytor",
+  "version": "0.0.1",
+  "description": "",
+  "scripts": {
+    "build": "webpack",
+    "watch": "webpack-dev-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.4"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^2.4.2",
+    "webpack": "^2.3.3"
+  }
+}
