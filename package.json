@@ -16,7 +16,7 @@
     "name": "Paweł Preczyński",
     "email": "pawel.preczynski@gmail.com"
   },
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "domready": "^1.0.8"
   },
