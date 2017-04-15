@@ -1,9 +1,12 @@
-import _ from 'lodash';
+import domready from 'domready';
 
 var app = {
+    ready: false,
+
     // Application Constructor
     initialize: function() {
         document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
+        domready(this.onDeviceReady.bind(this));
     },
 
     // deviceready Event Handler
@@ -11,6 +14,12 @@ var app = {
     // Bind any cordova events here. Common events are:
     // 'pause', 'resume', etc.
     onDeviceReady: function() {
+
+        if (this.ready) {
+            return;
+        }
+        this.ready = true;
+
         document.querySelector('.app').classList.add('show');
 
         this.receivedEvent('deviceready');

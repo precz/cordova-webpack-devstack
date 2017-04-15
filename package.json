@@ -1,19 +1,29 @@
 {
-  "name": "precz.guide.edytor",
-  "version": "0.0.1",
-  "description": "",
+  "name": "cordova-webpack-devstack",
+  "version": "0.1.0",
+  "description": "Cordova + Webpack, devstack example project.",
+  "cordova": {
+    "id": "cordova.webpack.devstack",
+    "name": "Cordova + Webpack"
+  },
   "scripts": {
     "build": "webpack",
     "watch": "webpack-dev-server",
+    "prepare": "./hooks/before_build/config.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": {
+    "name": "Paweł Preczyński",
+    "email": "pawel.preczynski@gmail.com"
+  },
   "license": "ISC",
   "dependencies": {
-    "lodash": "^4.17.4"
+    "domready": "^1.0.8"
   },
   "devDependencies": {
     "webpack-dev-server": "^2.4.2",
-    "webpack": "^2.3.3"
-  }
+    "webpack": "^2.3.3",
+    "lodash": "^4.17.4"
+  },
+  "private": true
 }

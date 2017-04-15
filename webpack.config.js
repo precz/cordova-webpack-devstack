@@ -7,7 +7,6 @@ module.exports = {
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'www/js')
-    // devtool: 'cheap-source-map'
   },
   devServer: {
     contentBase: path.resolve(__dirname, 'www'),
