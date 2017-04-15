@@ -24,6 +24,7 @@ Example for Android:
 
 Update your project
 -------------------
+Update to never version of devstack.
 * Add the remote, call it `devstack`:
 `git remote add devstack git@github.com:precz/cordova-webpack-devstack.gitt`
 * Fetch all:
