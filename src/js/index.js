@@ -14,13 +14,10 @@ var app = {
     // Bind any cordova events here. Common events are:
     // 'pause', 'resume', etc.
     onDeviceReady: function() {
-
         if (this.ready) {
             return;
         }
         this.ready = true;
-
-        document.querySelector('.app').classList.add('show');
 
         this.receivedEvent('deviceready');
     },
