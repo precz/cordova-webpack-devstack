@@ -1,6 +1,17 @@
 Cordova + Webpack, devstack
 ===========================
 
+Update your project
+-------------------
+* Add the remote, call it `devstack`:
+`git remote add devstack https://github.com/precz/cordova-webpack-devstack.git`
+* Fetch all:
+`git fetch devstack`
+* Checkout to your master barnch:
+`git checkout master`
+* Merge master branch with desired version of devstack
+`git merge devstack/1.0.0`
+
 Licence
 -------
 The MIT License (MIT)
