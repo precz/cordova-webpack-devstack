@@ -1,5 +1,8 @@
 {
   "name": "cordova-webpack-devstack",
+  "devstack": {
+    "version": "1.0.0"
+  },
   "version": "0.1.0",
   "description": "Cordova + Webpack, devstack example project.",
   "cordova": {
