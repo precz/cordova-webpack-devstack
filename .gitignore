@@ -1,5 +1,9 @@
 www/js/bundle.js
+selenium-debug.log
+
 plugins
 platforms
 node_modules
 config.xml
+bin
+tests/output

@@ -2,6 +2,13 @@ Cordova + Webpack, devstack
 ===========================
 > You must gather your party before venturing forth.
 
+Fellowship members:
+-------------------
+* [Apache Cordova](https://cordova.apache.org/) - For targeting multiple platforms with one code base.
+* [Webpack Module Bundler](https://webpack.js.org/) - To bundle our code.
+* [SeleniumHQ](http://www.seleniumhq.org/) - Browser automation engine.
+* [Nightwatch.js](http://nightwatchjs.org/) - For easy browser automated testing.
+
 Create your project
 -------------------
 * Fork or clone this repository:
@@ -14,6 +21,10 @@ Development
 -----------
 * Run watch task: `npm run watch`.
 * Navigate to [localhost:8080](http://localhost:8080/). Page would be automaticly refreshed with rebuild scripts when you save your work.
+
+Tests
+-----
+* Functional tests needs page to be served `npm run watch`. Then run `npm run test:functional`. Curently only Firefox is supported.
 
 Cordova
 -------

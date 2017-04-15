@@ -12,7 +12,8 @@
   "scripts": {
     "build": "webpack",
     "watch": "webpack-dev-server",
-    "prepare": "./hooks/before_build/config.js",
+    "prepare": "./hooks/prepare.sh",
+    "test:functional": "nightwatch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": {
@@ -24,9 +25,10 @@
     "domready": "^1.0.8"
   },
   "devDependencies": {
-    "webpack-dev-server": "^2.4.2",
+    "lodash": "^4.17.4",
+    "selenium-webdriver": "^3.3.0",
     "webpack": "^2.3.3",
-    "lodash": "^4.17.4"
+    "webpack-dev-server": "^2.4.2"
   },
   "private": true
 }
