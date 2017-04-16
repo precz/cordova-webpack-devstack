@@ -9,6 +9,7 @@ let VERSION = 'v0.15.0';
 let SUFIX = '.tar.gz';
 let RELEASE_URL = 'https://github.com/mozilla/geckodriver/releases/download/' + VERSION + '/';
 let DIR = 'bin/';
+let TMP_DIR = 'tmp/'
 
 wGet();
 
@@ -48,7 +49,7 @@ function extract () {
   var version = getVersion();
 
   exec(
-    ['tar', '-xf', DIR + version, '-C', DIR].join(' '),
+    ['tar', '-xf', TMP_DIR + version, '-C', DIR].join(' '),
     function (error, stdout, stderr) {
       if (error === null) {
         return setSystemPath();
@@ -63,7 +64,7 @@ function wGet () {
   var url = RELEASE_URL + version;
 
   exec(
-    ['wget', url, '-O', DIR + version].join(' '),
+    ['wget', url, '-O', TMP_DIR + version].join(' '),
     function (error, stdout, stderr) {
       if (error === null) {
         return extract();
