@@ -27,7 +27,7 @@ var ENVIRONMENTS = {
 
 module.exports = {
   src_folders: ['tests/functional'],
-  output_folder: 'tests/output',
+  output_folder: 'tmp/tests/functional.report',
   selenium: SELENIUM_CONFIGURATION,
   test_settings: ENVIRONMENTS
 };

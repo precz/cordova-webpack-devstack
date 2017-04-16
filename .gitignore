@@ -6,4 +6,4 @@ platforms
 node_modules
 config.xml
 bin
-tests/output
+tmp
